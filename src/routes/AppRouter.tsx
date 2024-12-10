@@ -4,6 +4,7 @@ import ErrorPage from "../pages/Error/ErrorPage";
 import LoginPage from "../pages/LoginPage/LoginPage";
 import RegisterPage from "../pages/RegisterPage/RegisterPage";
 import HomePage from "../pages/Home/HomePage";
+
 export default function AppRouter() {
   const router = createBrowserRouter([
     {
