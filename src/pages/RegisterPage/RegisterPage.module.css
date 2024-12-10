@@ -1,0 +1,150 @@
+.TitleSection h4 {
+  font-size: 30px;
+}
+
+.NameStyle {
+  display: flex;
+  text-align: right;
+  gap: 2px;
+}
+.NameStyle > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.NameStyle > div > input {
+  width: 100px;
+  border-radius: 10px;
+  padding: 10px 10px;
+  outline: none;
+  border: 3px solid var(--secondary-color);
+  transition: all 0.2s ease-in;
+}
+.NameStyle > div > label {
+  font-weight: 500;
+}
+.NameStyle > div > input:focus {
+  border-color: var(--main-color);
+}
+
+/*  */
+
+.parentDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.RightDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.bodyStyle {
+  margin: 20px;
+}
+.bodyStyle form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bodyStyle form > div:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 10px;
+}
+
+.bodyStyle form > div > input,
+.bodyStyle form > div > select {
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px 10px;
+  outline: none;
+  border: 3px solid var(--secondary-color);
+  transition: all 0.2s ease-in;
+}
+.bodyStyle form > div > label {
+  font-weight: 500;
+}
+.bodyStyle form > div > input:focus,
+.bodyStyle form > div > select:focus {
+  border-color: var(--main-color);
+}
+
+.LeftDiv {
+  position: fixed;
+  width: 40%;
+  height: 100vh;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+
+.BtnStyle {
+  border: none;
+  outline: none;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.ImageStyle {
+  width: 400px;
+  transform: scaleX(-1);
+}
+
+.styleLinkReset {
+  text-decoration: none;
+  color: var(--main-color);
+  text-align: end;
+  font-weight: 500;
+}
+
+.styleQ {
+  font-weight: 500;
+  text-align: end;
+  margin: 10px;
+  width: 100%;
+  
+}
+/* .bodyStyle form > div > select {
+  outline: none;
+  border: none;
+
+} */
+
+@media (max-width: 815px) {
+  .parentDiv {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .LeftDiv {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .RightDiv {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .LeftDiv img {
+    width: 80%;
+    height: auto;
+  }
+}

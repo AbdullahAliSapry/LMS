@@ -1,0 +1,118 @@
+.parentDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.RightDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.titleStyle span {
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+}
+.titleStyle h4 {
+  font-size: 40px;
+  font-weight: 700;
+
+  /* font-family: "Marhey", sans-serif; */
+  font-family: "Vibes", system-ui;
+
+  margin-top: 10px;
+}
+.bodyStyle {
+  margin: 20px;
+}
+.bodyStyle form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bodyStyle form > div {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 10px;
+}
+
+.bodyStyle form > div > input {
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px 10px;
+  outline: none;
+  border: 3px solid var(--secondary-color);
+  transition: all 0.2s ease-in;
+}
+.bodyStyle form > div > label {
+  font-weight: 500;
+}
+.bodyStyle form > div > input:focus {
+  border-color: var(--main-color);
+}
+.LeftDiv {
+  width: 40%;
+  height: 100vh;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BtnStyle {
+  border: none;
+  outline: none;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.ImageStyle {
+  width: 400px;
+  transform: scaleX(-1);
+}
+
+.styleLinkReset {
+  text-decoration: none;
+  color: var(--main-color);
+  text-align: end;
+  font-weight: 500;
+}
+
+.styleQ {
+  font-weight: 500;
+  text-align: center;
+  margin: 10px;
+}
+
+@media (max-width: 815px) {
+  .parentDiv {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .LeftDiv {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .RightDiv {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .LeftDiv img {
+    width: 80%;
+    height: auto;
+  }
+}
