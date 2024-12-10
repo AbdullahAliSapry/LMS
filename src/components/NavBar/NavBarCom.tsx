@@ -12,16 +12,13 @@ function NavBarCom() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        {/* الشعار في البداية */}
         <Navbar.Brand as={Link} to={'/'}>موقع الاستاذ {NameTeacher}</Navbar.Brand>
 
-        {/* قائمة التبديل على الشاشات الصغيرة */}
         <Navbar.Toggle aria-controls="navbarScroll" />
 
-        {/* توسيط الروابط في المنتصف */}
         <Navbar.Collapse id="navbarScroll" className="justify-content-center">
           <Nav
-            className="d-flex justify-content-center my-2 my-lg-0" // توسيط الروابط
+            className="d-flex justify-content-center my-2 my-lg-0"
             style={{ maxHeight: "100px" }}
             navbarScroll>
             <Nav.Link as={Link} to="/">
